@@ -5,6 +5,7 @@ from streamlit.logger import get_logger
 
 import pandas as pd
 
+import openai
 from langchain.vectorstores import Chroma
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.chains import RetrievalQA
