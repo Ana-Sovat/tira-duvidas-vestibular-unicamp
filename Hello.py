@@ -24,7 +24,9 @@ tabela = pd.read_csv("Vestibular.csv",index_col=0)
 os.environ['OPENAI_API_KEY'] = st.secrets["API_SECRET_KEY"]
 
 #cria os embeddings e coloca no chroma
-chroma_unicamp = Chroma.from_texts(texts=tabela.Textos.to_list(),embedding=OpenAIEmbeddings())
+cliente = Chroma()
+cliente.delete_collection()
+chroma_unicamp = cliente.from_texts(texts=tabela.Textos.to_list(),embedding=OpenAIEmbeddings())
 
 #cria a conexão com o modelo
 modelo = ChatOpenAI()
