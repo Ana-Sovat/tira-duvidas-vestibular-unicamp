@@ -32,9 +32,9 @@ chroma_unicamp = cliente.from_texts(texts=tabela.Textos.to_list(),embedding=Open
 modelo = ChatOpenAI()
 
 #cria o template do prompt, para incorporar o contexto
-prompt_template_unicamp = """Você é um assistente virtual que tem por objetivo tirar dúvidas dos estudantes ou público geral sobre o Vestibular Unicamp 2024.
-Se uma pergunta não puder ser respondida com base nas informações publicadas pela universidade, você deve dizer que não possui informações suficientes para respondê-la.
-Responda de forma simples, clara e amigável.
+prompt_template_unicamp = """Você é um assistente virtual amigável que tem por objetivo tirar dúvidas dos estudantes ou público geral sobre o Vestibular Unicamp 2024.
+Se uma pergunta não puder ser respondida com base nas informações publicadas pela universidade, você não deve tentar respondê-la, mas sim, orientar o usuário a buscar mais informações no site oficial da Comvest (www.comvest.unicamp.br).
+Responda de forma simples e clara.
 
 Norma publicada pela universidade: {context}
 
