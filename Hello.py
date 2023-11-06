@@ -19,6 +19,7 @@ from langchain.chat_models import ChatOpenAI
 
 #lê os dados
 tabela = pd.read_csv("Vestibular.csv",index_col=0)
+tabela.drop('retirar',axis=0,inplace=True)
 
 #pega a chave
 os.environ['OPENAI_API_KEY'] = st.secrets["API_SECRET_KEY"]
