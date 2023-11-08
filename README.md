@@ -1,7 +1,18 @@
-# Welcome to streamlit
+# Tira-Dúvidas Vestibular Unicamp 2024
 
-This is the app you get when you run `streamlit hello`, extracted as its own app.
+Projeto desenvolvido para o processo seletivo do Estágio de Verão NeuralMind 2024
 
-Edit [Hello.py](./Hello.py) to customize this app to your heart's desire. ❤️
+## Entregáveis
 
-Check it out on [Streamlit Community Cloud](https://st-hello-app.streamlit.app/)
+- [Relatório](./Projeto_%20Chatbot%20para%20Responder%20Dúvidas%20sobre%20o%20Vestibular%20da%20Unicamp%202024.pdf)
+- Acesso ao [Chatbot na Nuvem](https://tira-duvidas-vestibular-unicamp.streamlit.app/)
+
+## Instruções para rodar localmente
+
+A chave secreta da API da OpenAI deve estar declarada em uma variável do sistema nomeada "API_SECRET_KEY".
+
+``` streamlit run Hello.py ```
+
+## Ambiente de desenvolvimento
+
+Também está disponível no repositório um arquivo Jupyter Notebook em que fiz o desenvolvimento do projeto.
